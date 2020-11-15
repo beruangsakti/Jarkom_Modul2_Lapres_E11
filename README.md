@@ -47,5 +47,32 @@ Diminta membuat reverse domain untuk domain utama:\
 ![soal4C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/4C.jpg)\
 (reverse domain name pointer sudah sesuai)
 
+### SOAL 5
+Diminta agar MOJOKERTO dijadikan DNS Server Slave:\
+(penjelasan)\
+![soal5A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5A.PNG)\
+(penejelasan)\
+![soal5B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5B.PNG)\
+(penjelasan)\
+![soal5C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5C.PNG)\
+(e)\
+![soal5D](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5D.PNG)\
+(penejelasan)\
+![soal5E](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5E.PNG)\
+(Sudah dapat dilakukan ping)
+
+### SOAL 6
+Diminta membuat subdomain dengan alamat http://gunung.semerue11.pw yang didelegasikan pada MOJOKERTO dan mengarah ke IP Server PROBOLINGGO:
+(penjelasan)\
+![soal6A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6A.PNG)\
+(penejelasan)\
+![soal6B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6B.PNG)\
+(penjelasan)\
+![soal6C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6C.PNG)\
+(e)\
+![soal6D](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6D.PNG)\
+(penejelasan)\
+![soal6E](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6E.PNG)\
+(Sudah dapat dilakukan ping)
 
 
