@@ -44,6 +44,8 @@ Diminta membuat reverse domain untuk domain utama:\
 (penejelasan)\
 ![soal4B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/4B.PNG)\
 (penjelasan)\
+![soal4C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/4C.jpg)\
+(reverse domain name pointer sudah sesuai)
 
 
 
