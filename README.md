@@ -21,7 +21,7 @@ Setelah itu, dapat dilakukan pengetesan dengan cara melakukan ping terhadap seme
 
 
 ### SOAL 2
-Diminta agar alamat http://semerue11.pw memiliki alias http://www.semerue11.pw:\
+Diminta agar alamat http://semerue11.pw memiliki alias http://www.semerue11.pw: \
 Kembali pada UML MALANG, file semerue11 diberi modifikasi tambahan CNAME untuk mengatur alias, seperti pada gambar:\
 ![soal2A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/2A.PNG)\
 Lakukan pengecekan dengan melakukan ping\
@@ -74,6 +74,50 @@ Pada MOJOKERTO, edit file /etc/bind/delegasi/gunung.semerue11.pw \
 ![soal6D](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6D.PNG)\
 Dilakukan pengecekan dengan cara melakukan ping dari Client\
 ![soal6E](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6E.PNG)\
+
+### SOAL 8
+Diminta untuk mengatur web server sehingga domain http://semerue11.pw memiliki DocumentRoot pada /var/www/semerue11.pw \
+Pada PROBOLINGGO (web server), lakukan modifikasi pada file semerue11.pw.com \
+![soal8A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/8A.png)\
+
+### SOAL 10
+Diminta agar web http://penanjakan.semerue11.pw menyimpan assets file yang memiliki DocumentRoot pada /var/www/ penanjakan.semerue11.pw \
+Pada PROBOLINGGO, lakukan modifikasi pada file penanjakan.semerue11.pw.conf dengan menambahkan DocumentRoot \
+![soal10A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/10A.png)\
+
+### SOAL 13
+Untuk mengakses file assets javascript awalnya harus menggunakan url http:// penanjakan.semerue11.pw /public/javascripts .
+Karena terlalu panjang maka buatlah konfigurasi virtual host agar ketika mengakses file assets menjadi http://penanjakan.semerue11.pw /js . \
+Pada PROBOLINGGO, lakukan modifikasi pada file penanjakan.semerue11.pw.conf dengan menambahkan Alias  \
+![soal13A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/13A.jpg)\
+
+### SOAL 14
+Diminta untuk membuat web http:// naik.gunung.semerue11.pw bisa diakses hanya dengan menggunakan port 8888. \
+Pada PROBOLINGGO, lakukan modifikasi pada file penanjakan.semerue11.pw.conf dengan menambahkan VirtualHost \
+![Soal14A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/14A.PNG)\
+Pada ports.conf, ditambahkan Listen untuk 8888\
+![Soal14B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/14B.PNG)\
+
+### SOAL 15
+Diminta agar web http://naik.gunung.semerue11.pw agar mempunyai autentikasi password dengan usernamae "semeru" dan password "kuynaikgunung"\
+Pada PROBOLINGGO, file naik.gunung.semerue11.pw.conf diberi tambahan AutUserFile dll\
+![Soal15A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/15A.PNG)\
+
+### SOAL 16
+Diminta agar saat mengunjungi IP PROBOLINGGO, akan dialihkan ke http://semerue11.pw \
+Pada PROBOLINGGO, file \
+![Soal16A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/16A.PNG)\
+
+### SOAL 17
+Diminta agar pada /var/www/ penanjakan.semerue11.pw/public/images semua request gambar dengan substring '"semeru" diarahkan menuju semeru.jpg \
+Pada PROBOLINGGO, pada file .htaccess, berikan Rewrite \
+![Soal17A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/17A.jpg)\
+
+## KESULITAN SELAMA PENGERJAAN
+- terkadang jika kurang komunikasi, tanpa sadar ke-2 praktikan berusaha menggunakan vpn secara bersamaan
+- UML terkdang mendadak tertutup sendiri karena sinyal yang kurang baik, sehingga agak memakan waktu
+- adanya typo yang tidak disadari
+- dll
 
 
 
