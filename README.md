@@ -12,67 +12,68 @@ tersebut Bibah memberi router di SURABAYA .
 
 ### SOAL 1
 Diminta untuk membuat sebuah website utama dengan alamat http://semeruyyy.pw , dimana yyy pada alamat diganti sesuai nama kelompok, sehingga menjadi http://semerue11.pw :\
-( masukin penjelasan )\
+Pada UML MALANG(DNS server master), file semerue11.pw diisikan seperti pada gambar \
 ![soal1A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/1A.PNG)\
-(Pada UML MALANG(DNS server master), file semerue11.pw diisikan seperti pada gambar)\
+Pada client (GRESIK dan SIDOARJO), dilakukan setting terhadap nameserver dengan merubah isi file resolv.conf dengan cara mengetikkan ```nano /etc/resolv.conf``` pada masing-masing client dan isikan nameserver diikuti IP MALANG\
 ![soal1B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/1B.PNG)\
-(Setting nameserver pada client)\
-![soal1C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/1C.PNG)\
-(Sudah dapat tersambung/dilakukan ping)
+Setelah itu, dapat dilakukan pengetesan dengan cara melakukan ping terhadap semerue11.pw
+![soal1C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/1C.PNG)
+
 
 ### SOAL 2
 Diminta agar alamat http://semerue11.pw memiliki alias http://www.semerue11.pw:\
-(masukin penjelasan)\
+Kembali pada UML MALANG, file semerue11 diberi modifikasi tambahan CNAME untuk mengatur alias, seperti pada gambar:\
 ![soal2A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/2A.PNG)\
-(File semerue11.pw diberi tambahan)\
+Lakukan pengecekan dengan melakukan ping\
 ![soal2B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/2B.PNG)\
-(Dapat dilakukan ping)
+
 
 ### SOAL 3
 Diminta agar alamat http://semerue11.pw memiliki subdomain http://penanjakan.semerue11.pw
 yang diatur DNS-nya pada MALANG dan mengarah ke IP Server PROBOLINGGO:\
-(masukin penjelasan)\
+Pada UML MALANG, file semerue11.pw diberi modifikasi tambahan lagi, seperti pada gambar:\
 ![soal3A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/3A.PNG)\
-(File semerue11.pw diberi tambahan lagi)\
+Alamat IP yang ditambahkan pada gambar adalah alamat IP milik PROBOLINGGO.\
+Dilakukan pengecekan dengan melakukan ping ke penanjakan.semerue11.pw.\
 ![soal3B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/3B.PNG)\
-(Dapat dilakukan ping)
+
 
 ### SOAL 4
 Diminta membuat reverse domain untuk domain utama:\
-(penjelasan)\
+Pada UML MALANG, dilakukan penambahan konfigurasi untuk reverse domain pada file /etc/bind/named.conf.local \
 ![soal4A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/4A.PNG)\
-(penejelasan)\
+Masih pada UML Malang, isikan file 71.151.10.in-adrr.arpa sebagai berikut\
 ![soal4B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/4B.PNG)\
-(penjelasan)\
+Setelah dilakukan reset, dapat dilakukan tes pada Client untuk mengetahui apakah pengaturan sudah benar\
 ![soal4C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/4C.jpg)\
-(reverse domain name pointer sudah sesuai)
+
 
 ### SOAL 5
 Diminta agar MOJOKERTO dijadikan DNS Server Slave:\
-(penjelasan)\
+Pada MALANG, /etc/bind/named.conf.local diberi tambahan pada bagian dalam zone "semerue11.pw" \
 ![soal5A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5A.PNG)\
-(penejelasan)\
+Pada MOJOKERTO, /etc/bind/named.conf.local dibuat sesuai pada gambar berikut \
 ![soal5B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5B.PNG)\
-(penjelasan)\
+Untuk melakukan testing, matikan MALANG terlebih dahulu\
 ![soal5C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5C.PNG)\
-(e)\
+Pada file /etc/resolv.conf milik Client, diberi tambahan seperti pada gambar untuk setting terhadap nameserver \
 ![soal5D](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5D.PNG)\
-(penejelasan)\
+Lakukan tes dengan melakukan ping terhadap semerue11.pw\
 ![soal5E](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/5E.PNG)\
-(Sudah dapat dilakukan ping)
+Ping dapat dilakukan meskipun MALANG telah dimatikan
 
 ### SOAL 6
 Diminta membuat subdomain dengan alamat http://gunung.semerue11.pw yang didelegasikan pada MOJOKERTO dan mengarah ke IP Server PROBOLINGGO:
-(penjelasan)\
+Pada MALANG, file /etc/bind/jarkom/semerue11.pw diberi modifikasi\
 ![soal6A](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6A.PNG)\
-(penejelasan)\
+Masih pada MALANG, dilakukan modifikasi pada file /etc/bind/named.conf.options\
 ![soal6B](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6B.PNG)\
-(penjelasan)\
+Pada MOJOKERTO, edit file /etc/bind/named.conf.local dengan menambahkan zone baru\
 ![soal6C](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6C.PNG)\
-(e)\
+Pada MOJOKERTO, edit file /etc/bind/delegasi/gunung.semerue11.pw \
 ![soal6D](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6D.PNG)\
-(penejelasan)\
+Dilakukan pengecekan dengan cara melakukan ping dari Client\
 ![soal6E](https://github.com/beruangsakti/Jarkom_Modul2_Lapres_E11/blob/main/Screenshoot/6E.PNG)\
-(Sudah dapat dilakukan ping)
+
 
 
